@@ -53,17 +53,17 @@ public class Ex01_login_account {
 					String loginId = sc.next();
 					System.out.print("로그인할 비밀번호> ");
 					String loginPw = sc.next();
-					boolean find = false;
+					int find = -1;
 					
 					for(int i=0; i<cnt; i++) {
 						if(loginId.equals(id[i]) && loginPw.equals(pw[i])) {
 							System.out.println(name[i]+"님 반갑습니다!");
-							find = true;
+							find = 1;
 							loginIndex = i;
 							break;
 						}
 					}
-					if(find == false) {
+					if(find == -1) {
 						System.out.println("로그인 실패");
 					}
 				}
