@@ -5,11 +5,10 @@ import java.util.*;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner s = new Scanner(System.in);
-		
 		AccountDAO adao = new AccountDAO();
 		DetailDAO ddao = new DetailDAO();
 		
+		Scanner s = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("#,###원");
 		SimpleDateFormat sdf = new SimpleDateFormat("YYYY-MM-dd HH:mm:ss");
 		
